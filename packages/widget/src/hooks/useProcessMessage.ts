@@ -11,24 +11,38 @@ import { LifiErrorCode } from '@lifi/sdk';
 import type { TFunction } from 'i18next';
 import { useTranslation } from 'react-i18next';
 import { useWidgetConfig } from '../providers';
-import type { WidgetSubvariant } from '../types';
+import type { EmbeddedWalletConfig, WidgetSubvariant } from '../types';
 import { formatTokenAmount } from '../utils';
 import { useChains } from './useChains';
 
 export const useProcessMessage = (step?: LifiStep, process?: Process) => {
-  const { subvariant } = useWidgetConfig();
+  const { subvariant, embeddedWalletConfig } = useWidgetConfig();
   const { t } = useTranslation();
   const { getChainById } = useChains();
   if (!step || !process) {
     return {};
   }
-  return getProcessMessage(t, getChainById, step, process, subvariant);
+  return getProcessMessage(
+    t,
+    getChainById,
+    step,
+    process,
+    subvariant,
+    embeddedWalletConfig,
+  );
 };
 
 const processStatusMessages: Record<
   ProcessType,
   Partial<
-    Record<Status, (t: TFunction, subvariant?: WidgetSubvariant) => string>
+    Record<
+      Status,
+      (
+        t: TFunction,
+        subvariant?: WidgetSubvariant,
+        isEmbeddedWallet?: boolean,
+      ) => string
+    >
   >
 > = {
   TOKEN_ALLOWANCE: {
@@ -43,7 +57,10 @@ const processStatusMessages: Record<
   },
   SWAP: {
     STARTED: (t) => t(`main.process.swap.started`),
-    ACTION_REQUIRED: (t) => t(`main.process.swap.actionRequired`),
+    ACTION_REQUIRED: (t, isEmbeddedWallet) =>
+      isEmbeddedWallet
+        ? t(`main.process.swap.actionRequired`)
+        : t(`main.process.swap.pending`),
     PENDING: (t) => t(`main.process.swap.pending`),
     DONE: (t, subvariant) =>
       subvariant === 'nft'
@@ -52,7 +69,10 @@ const processStatusMessages: Record<
   },
   CROSS_CHAIN: {
     STARTED: (t) => t(`main.process.crossChain.started`),
-    ACTION_REQUIRED: (t) => t(`main.process.crossChain.actionRequired`),
+    ACTION_REQUIRED: (t, isEmbeddedWallet) =>
+      isEmbeddedWallet
+        ? t(`main.process.crossChain.actionRequired`)
+        : t(`main.process.crossChain.pending`),
     PENDING: (t) => t(`main.process.crossChain.pending`),
     DONE: (t) => t(`main.process.crossChain.done`),
   },
@@ -102,6 +122,7 @@ export function getProcessMessage(
   step: LifiStep,
   process: Process,
   subvariant?: WidgetSubvariant,
+  embeddedWalletConfig?: EmbeddedWalletConfig | undefined,
 ): {
   title?: string;
   message?: string;
@@ -190,6 +211,10 @@ export function getProcessMessage(
     processSubstatusMessages[process.status as StatusMessage]?.[
       process.substatus!
     ]?.(t) ??
-    processStatusMessages[process.type]?.[process.status]?.(t, subvariant);
+    processStatusMessages[process.type]?.[process.status]?.(
+      t,
+      subvariant,
+      !!embeddedWalletConfig,
+    );
   return { title };
 }
