@@ -136,6 +136,7 @@ export interface WidgetConfig {
 
   walletManagement?: WidgetWalletManagement;
   sdkConfig?: SDKConfig;
+  embeddedWalletConfig?: EmbeddedWalletConfig;
 
   buildUrl?: boolean;
   keyPrefix?: string;
@@ -166,6 +167,12 @@ export interface WidgetConfig {
   languageResources?: LanguageResources;
   disableLanguageDetector?: boolean;
 }
+
+export type EmbeddedWalletConfig = {
+  isWallet?: boolean;
+  sponsorGas?: boolean;
+  hideConnectWallet?: boolean;
+};
 
 export type WidgetDrawerProps = {
   elementRef?: RefObject<HTMLDivElement>;
