@@ -13,7 +13,7 @@ export const BaseTransactionButton: React.FC<BaseTransactionButtonProps> = ({
 }) => {
   const { t } = useTranslation();
   const navigate = useNavigate();
-  const { walletManagement } = useWidgetConfig();
+  const { walletManagement, embeddedWalletConfig } = useWidgetConfig();
   const { account, connect } = useWallet();
 
   const handleClick = async () => {
@@ -27,7 +27,8 @@ export const BaseTransactionButton: React.FC<BaseTransactionButtonProps> = ({
   };
 
   const getButtonText = () => {
-    if (account.isActive) {
+    //We never want to show "connect wallet" if the widget is in an embedded wallet to avoid confusing users
+    if (account.isActive || embeddedWalletConfig) {
       if (text) {
         return text;
       }
