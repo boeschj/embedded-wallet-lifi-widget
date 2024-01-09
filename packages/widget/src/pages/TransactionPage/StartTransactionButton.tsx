@@ -4,6 +4,7 @@ import {
   useGasSufficiency,
   useRoutes,
 } from '../../hooks';
+import { useWidgetConfig } from '../../providers';
 import { useRouteExecutionStore } from '../../stores';
 import type { StartTransactionButtonProps } from './types';
 
@@ -20,8 +21,10 @@ export const StartTransactionButton: React.FC<StartTransactionButtonProps> = ({
     isInitialLoading: isFromTokenSufficiencyLoading,
   } = useFromTokenSufficiency(route);
 
+  const { embeddedWalletConfig } = useWidgetConfig();
   const shouldDisableButton =
-    insufficientFromToken || !!insufficientGas?.length;
+    insufficientFromToken ||
+    (!!insufficientGas?.length && !embeddedWalletConfig?.sponsorGas);
 
   return (
     <BaseTransactionButton
