@@ -1,8 +1,11 @@
+import type { Wallet } from '@boeschj/wallet-management';
+import { LiFiWalletManagement } from '@boeschj/wallet-management';
+import type {
+  WalletAccount,
+  WalletContextProps,
+} from '@boeschj/widget/providers';
 import type { Signer } from '@ethersproject/abstract-signer';
 import type { StaticToken } from '@lifi/sdk';
-import type { Wallet } from '@lifi/wallet-management';
-import { LiFiWalletManagement } from '@lifi/wallet-management';
-import type { WalletAccount, WalletContextProps } from '@lifi/widget/providers';
 import type { FC, PropsWithChildren } from 'react';
 import {
   createContext,

@@ -1,4 +1,4 @@
-import { WidgetEvent, useWidgetEvents } from '@lifi/widget';
+import { WidgetEvent, useWidgetEvents } from '@boeschj/widget';
 import { useCallback } from 'react';
 import { useController, useFormContext } from 'react-hook-form';
 import type { FormType } from '../../providers';

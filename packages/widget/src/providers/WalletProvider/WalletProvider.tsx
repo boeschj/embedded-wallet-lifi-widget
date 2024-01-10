@@ -1,6 +1,3 @@
-import type { Signer } from '@ethersproject/abstract-signer';
-import type { Web3Provider } from '@ethersproject/providers';
-import type { StaticToken } from '@lifi/sdk';
 import {
   LiFiWalletManagement,
   readActiveWallets,
@@ -8,8 +5,11 @@ import {
   addChain as walletAgnosticAddChain,
   switchChainAndAddToken as walletAgnosticAddToken,
   switchChain as walletAgnosticSwitchChain,
-} from '@lifi/wallet-management';
-import type { Wallet } from '@lifi/wallet-management/types';
+} from '@boeschj/wallet-management';
+import type { Wallet } from '@boeschj/wallet-management/types';
+import type { Signer } from '@ethersproject/abstract-signer';
+import type { Web3Provider } from '@ethersproject/providers';
+import type { StaticToken } from '@lifi/sdk';
 import type { FC, PropsWithChildren } from 'react';
 import {
   createContext,

@@ -4,7 +4,10 @@ const fs = require('fs-extra');
 const path = require('path');
 const glob = require('fast-glob');
 
-const privatePackages = ['@lifi/widget-playground', '@lifi/widget-embedded'];
+const privatePackages = [
+  '@boeschj/widget-playground',
+  '@boeschj/widget-embedded',
+];
 const packagesPath = path.join(process.cwd(), 'packages');
 const directoryPackages = glob
   .sync('*/package.json', { cwd: path.join(process.cwd(), 'packages') })

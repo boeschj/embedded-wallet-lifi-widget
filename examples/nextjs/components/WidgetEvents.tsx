@@ -1,10 +1,10 @@
 /* eslint-disable no-console */
-import type { Route } from '@lifi/sdk';
 import type {
   RouteExecutionUpdate,
   RouteHighValueLossUpdate,
-} from '@lifi/widget';
-import { WidgetEvent, useWidgetEvents } from '@lifi/widget';
+} from '@boeschj/widget';
+import { WidgetEvent, useWidgetEvents } from '@boeschj/widget';
+import type { Route } from '@lifi/sdk';
 import { useEffect } from 'react';
 
 export const WidgetEvents = () => {

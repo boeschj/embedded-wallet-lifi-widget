@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  transpilePackages: ['@lifi/widget', '@lifi/wallet-management'],
+  transpilePackages: ['@boeschj/widget', '@boeschj/wallet-management'],
 };
 
 module.exports = nextConfig;

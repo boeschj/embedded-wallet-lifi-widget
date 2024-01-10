@@ -1,4 +1,4 @@
-import { LiFiWidget } from '@lifi/widget';
+import { LiFiWidget } from '@boeschj/widget';
 import { WidgetEvents } from './WidgetEvents';
 
 export const Widget = () => {

@@ -1,5 +1,5 @@
 <script>
-  import { LiFiWidget } from '@lifi/widget';
+  import { LiFiWidget } from '@boeschj/widget';
   import ReactAdapter from './ReactAdapter.svelte';
 </script>
 

@@ -1,5 +1,5 @@
 {
-  "name": "@lifi/wallet-management",
+  "name": "@boeschj/wallet-management",
   "version": "2.4.1",
   "description": "LI.FI Wallet Management solution.",
   "sideEffects": false,
@@ -22,7 +22,7 @@
     ]
   },
   "publishConfig": {
-    "access": "public"
+    "access": "restricted"
   },
   "author": "Adrian Weniger <adrian@li.finance>",
   "homepage": "https://github.com/lifinance/wallet-management",

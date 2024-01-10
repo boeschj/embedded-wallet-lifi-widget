@@ -1,6 +1,6 @@
+import type { NFTProps } from '@boeschj/widget';
+import { FormKey, useWallet, useWatch } from '@boeschj/widget';
 import type { ChainId, TokenAmount } from '@lifi/sdk';
-import type { NFTProps } from '@lifi/widget';
-import { FormKey, useWallet, useWatch } from '@lifi/widget';
 import { Seaport } from '@opensea/seaport-js';
 import { useQuery } from '@tanstack/react-query';
 import type { FulfillmentDataResponse, NFTNetwork } from './types';

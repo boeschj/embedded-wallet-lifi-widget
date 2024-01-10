@@ -1,10 +1,10 @@
-import type { StaticToken } from '@lifi/sdk';
 import type {
   WidgetDrawer,
   WidgetSubvariant,
   WidgetVariant,
-} from '@lifi/widget';
-import { LiFiWidget } from '@lifi/widget';
+} from '@boeschj/widget';
+import { LiFiWidget } from '@boeschj/widget';
+import type { StaticToken } from '@lifi/sdk';
 import {
   Box,
   Checkbox,

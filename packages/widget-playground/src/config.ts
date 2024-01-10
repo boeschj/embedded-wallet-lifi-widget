@@ -1,5 +1,5 @@
-import { supportedWallets } from '@lifi/wallet-management';
-import type { WidgetConfig } from '@lifi/widget';
+import { supportedWallets } from '@boeschj/wallet-management';
+import type { WidgetConfig } from '@boeschj/widget';
 import './index.css';
 
 export const METAMASK_WALLET = supportedWallets.find(

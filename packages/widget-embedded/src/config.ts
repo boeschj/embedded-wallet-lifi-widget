@@ -1,4 +1,4 @@
-import type { WidgetConfig } from '@lifi/widget';
+import type { WidgetConfig } from '@boeschj/widget';
 import './index.css';
 
 export const widgetBaseConfig: WidgetConfig = {

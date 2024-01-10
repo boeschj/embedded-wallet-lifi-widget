@@ -1,4 +1,4 @@
-import { LiFiWidget } from '@lifi/widget';
+import { LiFiWidget } from '@boeschj/widget';
 import './App.css';
 
 function App() {
