@@ -1804,6 +1804,127 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@boeschj/wallet-management@npm:^3.0.0, @boeschj/wallet-management@workspace:packages/wallet-management":
+  version: 0.0.0-use.local
+  resolution: "@boeschj/wallet-management@workspace:packages/wallet-management"
+  dependencies:
+    "@coinbase/wallet-sdk": "npm:^3.7.2"
+    "@ethersproject/abstract-signer": "npm:^5.7.0"
+    "@ethersproject/experimental": "npm:^5.7.0"
+    "@ethersproject/providers": "npm:^5.7.2"
+    "@lifi/sdk": "npm:^2.4.3"
+    "@safe-global/safe-apps-provider": "npm:^0.18.0"
+    "@safe-global/safe-apps-sdk": "npm:^8.1.0"
+    "@walletconnect/ethereum-provider": "npm:^2.10.2"
+    "@walletconnect/modal": "npm:^2.6.2"
+    cpy-cli: "npm:^5.0.0"
+    events: "npm:^3.3.0"
+    react: "npm:^18.2.0"
+    typescript: "npm:^5.2.2"
+  languageName: unknown
+  linkType: soft
+
+"@boeschj/widget-embedded@workspace:packages/widget-embedded":
+  version: 0.0.0-use.local
+  resolution: "@boeschj/widget-embedded@workspace:packages/widget-embedded"
+  dependencies:
+    "@boeschj/wallet-management": "npm:^3.0.0"
+    "@boeschj/widget": "npm:^3.0.0"
+    "@esbuild-plugins/node-globals-polyfill": "npm:^0.2.3"
+    "@ethersproject/abstract-signer": "npm:^5.7.0"
+    "@lifi/sdk": "npm:^2.4.3"
+    "@mui/icons-material": "npm:^5.14.14"
+    "@mui/lab": "npm:^5.0.0-alpha.149"
+    "@mui/material": "npm:^5.14.14"
+    "@opensea/seaport-js": "npm:2.0.8"
+    "@tanstack/react-query": "npm:^4.36.1"
+    "@vitejs/plugin-react": "npm:^4.1.0"
+    bignumber.js: "npm:^9.1.2"
+    buffer: "npm:^6.0.3"
+    esbuild: "npm:^0.19.5"
+    ethers: "npm:^5.7.2"
+    events: "npm:^3.3.0"
+    react: "npm:^18.2.0"
+    react-dom: "npm:^18.2.0"
+    react-router-dom: "npm:^6.17.0"
+    rollup: "npm:^3.29.4"
+    rollup-plugin-polyfill-node: "npm:^0.12.0"
+    typescript: "npm:^5.2.2"
+    vite: "npm:^4.5.0"
+    web-vitals: "npm:^3.5.0"
+  languageName: unknown
+  linkType: soft
+
+"@boeschj/widget-playground@workspace:packages/widget-playground":
+  version: 0.0.0-use.local
+  resolution: "@boeschj/widget-playground@workspace:packages/widget-playground"
+  dependencies:
+    "@boeschj/wallet-management": "npm:^3.0.0"
+    "@boeschj/widget": "npm:^3.0.0"
+    "@esbuild-plugins/node-globals-polyfill": "npm:^0.2.3"
+    "@ethersproject/providers": "npm:^5.7.2"
+    "@lifi/sdk": "npm:^2.4.3"
+    "@mui/icons-material": "npm:^5.14.14"
+    "@mui/lab": "npm:^5.0.0-alpha.149"
+    "@mui/material": "npm:^5.14.14"
+    "@vitejs/plugin-react": "npm:^4.1.0"
+    ethers: "npm:^5.7.2"
+    events: "npm:^3.3.0"
+    react: "npm:^18.2.0"
+    react-dom: "npm:^18.2.0"
+    react-router-dom: "npm:^6.17.0"
+    rollup-plugin-polyfill-node: "npm:^0.12.0"
+    typescript: "npm:^5.2.2"
+    viem: "npm:^1.16.6"
+    vite: "npm:^4.5.0"
+    wagmi: "npm:^1.4.5"
+    web-vitals: "npm:^3.5.0"
+  languageName: unknown
+  linkType: soft
+
+"@boeschj/widget@npm:^3.0.0, @boeschj/widget@workspace:packages/widget":
+  version: 0.0.0-use.local
+  resolution: "@boeschj/widget@workspace:packages/widget"
+  dependencies:
+    "@boeschj/wallet-management": "npm:^3.0.0"
+    "@emotion/react": "npm:^11.11.1"
+    "@emotion/styled": "npm:^11.11.0"
+    "@ethersproject/abstract-signer": "npm:^5.7.0"
+    "@ethersproject/address": "npm:^5.7.0"
+    "@ethersproject/experimental": "npm:^5.7.0"
+    "@ethersproject/providers": "npm:^5.7.2"
+    "@lifi/sdk": "npm:^2.4.3"
+    "@mui/icons-material": "npm:^5.14.14"
+    "@mui/lab": "npm:^5.0.0-alpha.149"
+    "@mui/material": "npm:^5.14.14"
+    "@tanstack/react-query": "npm:^4.36.1"
+    "@tanstack/react-virtual": "npm:^3.0.0-beta.68"
+    big.js: "npm:^6.2.1"
+    cpy-cli: "npm:^5.0.0"
+    i18next: "npm:^23.6.0"
+    i18next-browser-languagedetector: "npm:^7.1.0"
+    microdiff: "npm:^1.3.2"
+    mitt: "npm:^3.0.1"
+    react: "npm:^18.2.0"
+    react-dom: "npm:^18.2.0"
+    react-hook-form: "npm:^7.47.0"
+    react-i18next: "npm:^13.3.1"
+    react-intersection-observer: "npm:^9.5.2"
+    react-router-dom: "npm:^6.17.0"
+    react-timer-hook: "npm:^3.0.7"
+    typescript: "npm:^5.2.2"
+    uuid: "npm:^9.0.1"
+    zustand: "npm:^4.4.4"
+  peerDependencies:
+    "@types/react": ^18.0.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+  languageName: unknown
+  linkType: soft
+
 "@coinbase/wallet-sdk@npm:^3.6.6, @coinbase/wallet-sdk@npm:^3.7.2":
   version: 3.7.2
   resolution: "@coinbase/wallet-sdk@npm:3.7.2"
@@ -3015,127 +3136,6 @@ __metadata:
   checksum: 96e1bdf997e5bfa49d17a2a0aee46b51e4672942cf464a3ab156e1acfd670e7a6c6caf47dcc5c5c027fe7853d541905da78d50e51445e835b4ff91ec40a4954f
   languageName: node
   linkType: hard
-
-"@boeschj/wallet-management@npm:^2.4.1, @boeschj/wallet-management@workspace:packages/wallet-management":
-  version: 0.0.0-use.local
-  resolution: "@boeschj/wallet-management@workspace:packages/wallet-management"
-  dependencies:
-    "@coinbase/wallet-sdk": "npm:^3.7.2"
-    "@ethersproject/abstract-signer": "npm:^5.7.0"
-    "@ethersproject/experimental": "npm:^5.7.0"
-    "@ethersproject/providers": "npm:^5.7.2"
-    "@lifi/sdk": "npm:^2.4.3"
-    "@safe-global/safe-apps-provider": "npm:^0.18.0"
-    "@safe-global/safe-apps-sdk": "npm:^8.1.0"
-    "@walletconnect/ethereum-provider": "npm:^2.10.2"
-    "@walletconnect/modal": "npm:^2.6.2"
-    cpy-cli: "npm:^5.0.0"
-    events: "npm:^3.3.0"
-    react: "npm:^18.2.0"
-    typescript: "npm:^5.2.2"
-  languageName: unknown
-  linkType: soft
-
-"@boeschj/widget-embedded@workspace:packages/widget-embedded":
-  version: 0.0.0-use.local
-  resolution: "@boeschj/widget-embedded@workspace:packages/widget-embedded"
-  dependencies:
-    "@esbuild-plugins/node-globals-polyfill": "npm:^0.2.3"
-    "@ethersproject/abstract-signer": "npm:^5.7.0"
-    "@lifi/sdk": "npm:^2.4.3"
-    "@boeschj/wallet-management": "npm:^2.4.1"
-    "@boeschj/widget": "npm:^2.8.0"
-    "@mui/icons-material": "npm:^5.14.14"
-    "@mui/lab": "npm:^5.0.0-alpha.149"
-    "@mui/material": "npm:^5.14.14"
-    "@opensea/seaport-js": "npm:2.0.8"
-    "@tanstack/react-query": "npm:^4.36.1"
-    "@vitejs/plugin-react": "npm:^4.1.0"
-    bignumber.js: "npm:^9.1.2"
-    buffer: "npm:^6.0.3"
-    esbuild: "npm:^0.19.5"
-    ethers: "npm:^5.7.2"
-    events: "npm:^3.3.0"
-    react: "npm:^18.2.0"
-    react-dom: "npm:^18.2.0"
-    react-router-dom: "npm:^6.17.0"
-    rollup: "npm:^3.29.4"
-    rollup-plugin-polyfill-node: "npm:^0.12.0"
-    typescript: "npm:^5.2.2"
-    vite: "npm:^4.5.0"
-    web-vitals: "npm:^3.5.0"
-  languageName: unknown
-  linkType: soft
-
-"@boeschj/widget-playground@workspace:packages/widget-playground":
-  version: 0.0.0-use.local
-  resolution: "@boeschj/widget-playground@workspace:packages/widget-playground"
-  dependencies:
-    "@esbuild-plugins/node-globals-polyfill": "npm:^0.2.3"
-    "@ethersproject/providers": "npm:^5.7.2"
-    "@lifi/sdk": "npm:^2.4.3"
-    "@boeschj/wallet-management": "npm:^2.4.1"
-    "@boeschj/widget": "npm:^2.8.0"
-    "@mui/icons-material": "npm:^5.14.14"
-    "@mui/lab": "npm:^5.0.0-alpha.149"
-    "@mui/material": "npm:^5.14.14"
-    "@vitejs/plugin-react": "npm:^4.1.0"
-    ethers: "npm:^5.7.2"
-    events: "npm:^3.3.0"
-    react: "npm:^18.2.0"
-    react-dom: "npm:^18.2.0"
-    react-router-dom: "npm:^6.17.0"
-    rollup-plugin-polyfill-node: "npm:^0.12.0"
-    typescript: "npm:^5.2.2"
-    viem: "npm:^1.16.6"
-    vite: "npm:^4.5.0"
-    wagmi: "npm:^1.4.5"
-    web-vitals: "npm:^3.5.0"
-  languageName: unknown
-  linkType: soft
-
-"@boeschj/widget@npm:^2.8.0, @boeschj/widget@workspace:packages/widget":
-  version: 0.0.0-use.local
-  resolution: "@boeschj/widget@workspace:packages/widget"
-  dependencies:
-    "@emotion/react": "npm:^11.11.1"
-    "@emotion/styled": "npm:^11.11.0"
-    "@ethersproject/abstract-signer": "npm:^5.7.0"
-    "@ethersproject/address": "npm:^5.7.0"
-    "@ethersproject/experimental": "npm:^5.7.0"
-    "@ethersproject/providers": "npm:^5.7.2"
-    "@lifi/sdk": "npm:^2.4.3"
-    "@boeschj/wallet-management": "npm:^2.4.1"
-    "@mui/icons-material": "npm:^5.14.14"
-    "@mui/lab": "npm:^5.0.0-alpha.149"
-    "@mui/material": "npm:^5.14.14"
-    "@tanstack/react-query": "npm:^4.36.1"
-    "@tanstack/react-virtual": "npm:^3.0.0-beta.68"
-    big.js: "npm:^6.2.1"
-    cpy-cli: "npm:^5.0.0"
-    i18next: "npm:^23.6.0"
-    i18next-browser-languagedetector: "npm:^7.1.0"
-    microdiff: "npm:^1.3.2"
-    mitt: "npm:^3.0.1"
-    react: "npm:^18.2.0"
-    react-dom: "npm:^18.2.0"
-    react-hook-form: "npm:^7.47.0"
-    react-i18next: "npm:^13.3.1"
-    react-intersection-observer: "npm:^9.5.2"
-    react-router-dom: "npm:^6.17.0"
-    react-timer-hook: "npm:^3.0.7"
-    typescript: "npm:^5.2.2"
-    uuid: "npm:^9.0.1"
-    zustand: "npm:^4.4.4"
-  peerDependencies:
-    "@types/react": ^18.0.0
-    react: ^18.0.0
-    react-dom: ^18.0.0
-  peerDependenciesMeta:
-    "@types/react":
-      optional: true
-  languageName: unknown
-  linkType: soft
 
 "@lit-labs/ssr-dom-shim@npm:^1.0.0, @lit-labs/ssr-dom-shim@npm:^1.1.0":
   version: 1.1.2
