@@ -16,7 +16,7 @@
     "release:version:before": "node scripts/private-version before",
     "release:version:after": "yarn release:build && node scripts/private-version after",
     "release:build": "lerna run build --no-private",
-    "release:publish": "lerna publish from-package --dist-tag latest --contents build --no-verify-access --yes",
+    "release:publish": "lerna publish from-package --dist-tag latest --contents build --no-verify-access --yes --force-publish",
     "release:publish:alpha": "lerna publish from-package --dist-tag alpha --contents build --no-verify-access --yes",
     "release:publish:beta": "lerna publish from-package --dist-tag beta --contents build --no-verify-access --yes"
   },
