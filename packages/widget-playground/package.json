@@ -23,8 +23,8 @@
   },
   "author": "Eugene Chybisov <eugene@li.finance>",
   "dependencies": {
-    "@boeschj/wallet-management": "^4.0.0",
-    "@boeschj/widget": "^4.0.0",
+    "@boeschj/wallet-management": "^5.0.0",
+    "@boeschj/widget": "^5.0.0",
     "@ethersproject/providers": "^5.7.2",
     "@lifi/sdk": "^2.4.3",
     "@mui/icons-material": "^5.14.14",

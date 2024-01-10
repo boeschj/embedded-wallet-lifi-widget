@@ -1,2 +1,2 @@
 export const name = '@boeschj/widget';
-export const version = '2.8.0';
+export const version = '5.0.0';

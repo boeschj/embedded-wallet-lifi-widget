@@ -1,6 +1,6 @@
 {
   "name": "@boeschj/wallet-management",
-  "version": "2.4.2",
+  "version": "5.0.0",
   "description": "LI.FI Wallet Management solution.",
   "sideEffects": false,
   "main": "./src/index.ts",
