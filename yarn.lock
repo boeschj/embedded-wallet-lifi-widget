@@ -1804,7 +1804,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@boeschj/wallet-management@npm:^3.0.0, @boeschj/wallet-management@workspace:packages/wallet-management":
+"@boeschj/wallet-management@npm:^4.0.0, @boeschj/wallet-management@workspace:packages/wallet-management":
   version: 0.0.0-use.local
   resolution: "@boeschj/wallet-management@workspace:packages/wallet-management"
   dependencies:
@@ -1828,8 +1828,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@boeschj/widget-embedded@workspace:packages/widget-embedded"
   dependencies:
-    "@boeschj/wallet-management": "npm:^3.0.0"
-    "@boeschj/widget": "npm:^3.0.0"
+    "@boeschj/wallet-management": "npm:^4.0.0"
+    "@boeschj/widget": "npm:^4.0.0"
     "@esbuild-plugins/node-globals-polyfill": "npm:^0.2.3"
     "@ethersproject/abstract-signer": "npm:^5.7.0"
     "@lifi/sdk": "npm:^2.4.3"
@@ -1859,8 +1859,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@boeschj/widget-playground@workspace:packages/widget-playground"
   dependencies:
-    "@boeschj/wallet-management": "npm:^3.0.0"
-    "@boeschj/widget": "npm:^3.0.0"
+    "@boeschj/wallet-management": "npm:^4.0.0"
+    "@boeschj/widget": "npm:^4.0.0"
     "@esbuild-plugins/node-globals-polyfill": "npm:^0.2.3"
     "@ethersproject/providers": "npm:^5.7.2"
     "@lifi/sdk": "npm:^2.4.3"
@@ -1882,11 +1882,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@boeschj/widget@npm:^3.0.0, @boeschj/widget@workspace:packages/widget":
+"@boeschj/widget@npm:^4.0.0, @boeschj/widget@workspace:packages/widget":
   version: 0.0.0-use.local
   resolution: "@boeschj/widget@workspace:packages/widget"
   dependencies:
-    "@boeschj/wallet-management": "npm:^3.0.0"
+    "@boeschj/wallet-management": "npm:^4.0.0"
     "@emotion/react": "npm:^11.11.1"
     "@emotion/styled": "npm:^11.11.0"
     "@ethersproject/abstract-signer": "npm:^5.7.0"
